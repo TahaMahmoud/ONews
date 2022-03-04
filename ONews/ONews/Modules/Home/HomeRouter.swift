@@ -49,8 +49,8 @@ extension HomeRouter: HomeRouterProtocol {
     }
     
     func navigateToArticleDetails(article: Article) {
-        // let articleDetailsRouter = ArticleDetailsRouter(navigationController: navigationController, article: article)
-        // articleDetailsRouter.start()
+        let articleDetailsRouter = ArticleDetailsRouter(navigationController: navigationController, article: article)
+        articleDetailsRouter.start()
     }
     
 }
