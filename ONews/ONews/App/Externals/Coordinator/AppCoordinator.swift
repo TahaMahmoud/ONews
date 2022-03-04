@@ -44,8 +44,8 @@ class AppCoordinator: Coordinator {
             let selectPreferencesRouter = SelectPreferencesRouter(navigationController: navigationController)
             coordinate(to: selectPreferencesRouter)
         } else {
-            // let homeRouter = HomeRouter(navigationController: navigationController)
-            // coordinate(to: homeRouter)
+            let homeRouter = HomeRouter(navigationController: navigationController)
+            coordinate(to: homeRouter)
         }
         
     }

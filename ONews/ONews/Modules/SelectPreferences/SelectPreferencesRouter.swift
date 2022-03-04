@@ -38,8 +38,8 @@ class SelectPreferencesRouter: Coordinator {
 extension SelectPreferencesRouter: SelectPreferencesRouterProtocol {
     
     func navigateToHome() {
-        // let homeRouter = HomeRouter(navigationController: navigationController)
-        // homeRouter.start()
+        let homeRouter = HomeRouter(navigationController: navigationController)
+        homeRouter.start()
     }
     
 }

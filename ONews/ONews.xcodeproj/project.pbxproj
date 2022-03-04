@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0323B3E603B35DA3547F1D8B /* Pods_ONewsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ADF80D0680882536FDAE806 /* Pods_ONewsTests.framework */; };
+		0F03545827D2BCE300C670AD /* NewsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F03545727D2BCE300C670AD /* NewsCell.xib */; };
 		0F1089B527D237470064133B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1089B427D237470064133B /* AppDelegate.swift */; };
 		0F1089B727D237470064133B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1089B627D237470064133B /* SceneDelegate.swift */; };
 		0F1089BE27D237490064133B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F1089BD27D237490064133B /* Assets.xcassets */; };
@@ -65,6 +66,16 @@
 		0FCCE54F27D29918003E49A1 /* SelectPreferencesViewController+Delegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCCE54E27D29918003E49A1 /* SelectPreferencesViewController+Delegates.swift */; };
 		0FCCE55227D2992D003E49A1 /* SelectPreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCCE55027D2992D003E49A1 /* SelectPreferencesViewController.swift */; };
 		0FCCE55327D2992D003E49A1 /* SelectPreferencesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FCCE55127D2992D003E49A1 /* SelectPreferencesViewController.xib */; };
+		0FCCE57627D2A479003E49A1 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCCE56B27D2A479003E49A1 /* HomeRouter.swift */; };
+		0FCCE57727D2A479003E49A1 /* HomeViewController+Delegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCCE56D27D2A479003E49A1 /* HomeViewController+Delegates.swift */; };
+		0FCCE57827D2A479003E49A1 /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCCE56E27D2A479003E49A1 /* NewsCell.swift */; };
+		0FCCE57927D2A479003E49A1 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FCCE56F27D2A479003E49A1 /* HomeViewController.xib */; };
+		0FCCE57A27D2A479003E49A1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCCE57027D2A479003E49A1 /* HomeViewController.swift */; };
+		0FCCE57C27D2A479003E49A1 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCCE57227D2A479003E49A1 /* HomePresenter.swift */; };
+		0FCCE57D27D2A479003E49A1 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCCE57327D2A479003E49A1 /* HomeModel.swift */; };
+		0FCCE57E27D2A479003E49A1 /* HomeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCCE57527D2A479003E49A1 /* HomeProtocols.swift */; };
+		0FCCE58027D2A49A003E49A1 /* HomeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCCE57F27D2A49A003E49A1 /* HomeRequest.swift */; };
+		0FCCE58227D2A4A7003E49A1 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCCE58127D2A4A7003E49A1 /* HomeInteractor.swift */; };
 		D72E6CA53CB217F1D4A55F7F /* Pods_ONews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2DF7987B5224FB492788F73 /* Pods_ONews.framework */; };
 		E89A1A76BDDB06B19076D023 /* Pods_ONews_ONewsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBF65E8C97435725BB302EDB /* Pods_ONews_ONewsUITests.framework */; };
 /* End PBXBuildFile section */
@@ -87,6 +98,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F03545727D2BCE300C670AD /* NewsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsCell.xib; sourceTree = "<group>"; };
 		0F1089B127D237470064133B /* ONews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ONews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F1089B427D237470064133B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0F1089B627D237470064133B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -148,6 +160,16 @@
 		0FCCE54E27D29918003E49A1 /* SelectPreferencesViewController+Delegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SelectPreferencesViewController+Delegates.swift"; sourceTree = "<group>"; };
 		0FCCE55027D2992D003E49A1 /* SelectPreferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPreferencesViewController.swift; sourceTree = "<group>"; };
 		0FCCE55127D2992D003E49A1 /* SelectPreferencesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectPreferencesViewController.xib; sourceTree = "<group>"; };
+		0FCCE56B27D2A479003E49A1 /* HomeRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		0FCCE56D27D2A479003E49A1 /* HomeViewController+Delegates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HomeViewController+Delegates.swift"; sourceTree = "<group>"; };
+		0FCCE56E27D2A479003E49A1 /* NewsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
+		0FCCE56F27D2A479003E49A1 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		0FCCE57027D2A479003E49A1 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		0FCCE57227D2A479003E49A1 /* HomePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		0FCCE57327D2A479003E49A1 /* HomeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		0FCCE57527D2A479003E49A1 /* HomeProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeProtocols.swift; sourceTree = "<group>"; };
+		0FCCE57F27D2A49A003E49A1 /* HomeRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRequest.swift; sourceTree = "<group>"; };
+		0FCCE58127D2A4A7003E49A1 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
 		1297AF3D42E03339D0F06956 /* Pods-ONews-ONewsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ONews-ONewsUITests.debug.xcconfig"; path = "Target Support Files/Pods-ONews-ONewsUITests/Pods-ONews-ONewsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		15D92501291C71C0D269AB1B /* Pods-ONewsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ONewsTests.debug.xcconfig"; path = "Target Support Files/Pods-ONewsTests/Pods-ONewsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2047C29FDF398CEDAA4681D6 /* Pods-ONews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ONews.debug.xcconfig"; path = "Target Support Files/Pods-ONews/Pods-ONews.debug.xcconfig"; sourceTree = "<group>"; };
@@ -391,6 +413,7 @@
 		0F1089F527D239A80064133B /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				0FCCE56A27D2A479003E49A1 /* Home */,
 				0FCCE54227D298EE003E49A1 /* SelectPreferences */,
 				0FCCE52027D286E5003E49A1 /* SelectLanguage */,
 			);
@@ -494,6 +517,40 @@
 				0FCCE55127D2992D003E49A1 /* SelectPreferencesViewController.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		0FCCE56A27D2A479003E49A1 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				0FCCE56C27D2A479003E49A1 /* View */,
+				0FCCE57427D2A479003E49A1 /* Interactor */,
+				0FCCE57227D2A479003E49A1 /* HomePresenter.swift */,
+				0FCCE57327D2A479003E49A1 /* HomeModel.swift */,
+				0FCCE56B27D2A479003E49A1 /* HomeRouter.swift */,
+				0FCCE57527D2A479003E49A1 /* HomeProtocols.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		0FCCE56C27D2A479003E49A1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0F03545727D2BCE300C670AD /* NewsCell.xib */,
+				0FCCE56D27D2A479003E49A1 /* HomeViewController+Delegates.swift */,
+				0FCCE56E27D2A479003E49A1 /* NewsCell.swift */,
+				0FCCE56F27D2A479003E49A1 /* HomeViewController.xib */,
+				0FCCE57027D2A479003E49A1 /* HomeViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0FCCE57427D2A479003E49A1 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				0FCCE57F27D2A49A003E49A1 /* HomeRequest.swift */,
+				0FCCE58127D2A4A7003E49A1 /* HomeInteractor.swift */,
+			);
+			path = Interactor;
 			sourceTree = "<group>";
 		};
 		B1677F732C3A7C426B82E754 /* Pods */ = {
@@ -632,9 +689,11 @@
 				0FCCE53227D28F85003E49A1 /* SelectLanguageViewController.xib in Resources */,
 				0F1089C127D237490064133B /* LaunchScreen.storyboard in Resources */,
 				0FCCE50B27D27FBF003E49A1 /* tickMark.png in Resources */,
+				0F03545827D2BCE300C670AD /* NewsCell.xib in Resources */,
 				0F1089BE27D237490064133B /* Assets.xcassets in Resources */,
 				0FCCE50827D27FBF003E49A1 /* CountryPickerController.bundle in Resources */,
 				0FCCE53527D2965B003E49A1 /* GE_SS_TWO_MEDIUM.otf in Resources */,
+				0FCCE57927D2A479003E49A1 /* HomeViewController.xib in Resources */,
 				0FCCE53427D29658003E49A1 /* GE_SS_Two_Light.otf in Resources */,
 				0FCCE53327D29654003E49A1 /* GE_SS_Two_Bold.otf in Resources */,
 			);
@@ -775,32 +834,41 @@
 				0FCCE54F27D29918003E49A1 /* SelectPreferencesViewController+Delegates.swift in Sources */,
 				0FCCE51727D2829C003E49A1 /* RealmManager.swift in Sources */,
 				0FCCE53127D28F85003E49A1 /* SelectLanguageViewController.swift in Sources */,
+				0FCCE57627D2A479003E49A1 /* HomeRouter.swift in Sources */,
 				0FCCE54827D298EE003E49A1 /* SelectPreferencesProtocols.swift in Sources */,
+				0FCCE57C27D2A479003E49A1 /* HomePresenter.swift in Sources */,
 				0FCCE52727D28720003E49A1 /* SelectLanguageProtocols.swift in Sources */,
 				0FCCE50327D27FBF003E49A1 /* Constant.swift in Sources */,
 				0FCCE50C27D27FBF003E49A1 /* CountryCell.swift in Sources */,
+				0FCCE58027D2A49A003E49A1 /* HomeRequest.swift in Sources */,
 				0FCCE54B27D298EE003E49A1 /* SelectPreferencesRouter.swift in Sources */,
 				0FCCE51F27D2837E003E49A1 /* Endpoint.swift in Sources */,
 				0FCCE52E27D28F67003E49A1 /* SelectLanguageViewController+Delegates.swift in Sources */,
 				0FCCE4FE27D27FBF003E49A1 /* CircleLotationSet.swift in Sources */,
 				0FCCE50727D27FBF003E49A1 /* CountryPickerController.swift in Sources */,
 				0FCCE52327D286FF003E49A1 /* SelectLanguagePresenter.swift in Sources */,
+				0FCCE57827D2A479003E49A1 /* NewsCell.swift in Sources */,
 				0FCCE50F27D28203003E49A1 /* AppCoordinator.swift in Sources */,
 				0FCCE51B27D28321003E49A1 /* NetworkManager.swift in Sources */,
+				0FCCE57D27D2A479003E49A1 /* HomeModel.swift in Sources */,
 				0FCCE4E127D27DA1003E49A1 /* Colors.swift in Sources */,
 				0FCCE50627D27FBF003E49A1 /* Country.swift in Sources */,
 				0FCCE4DA27D27D2A003E49A1 /* CustomView.swift in Sources */,
 				0FCCE51127D2822D003E49A1 /* UserDefaultsKeys.swift in Sources */,
 				0FCCE52527D28711003E49A1 /* SelectLanguageRouter.swift in Sources */,
+				0FCCE58227D2A4A7003E49A1 /* HomeInteractor.swift in Sources */,
+				0FCCE57E27D2A479003E49A1 /* HomeProtocols.swift in Sources */,
 				0FCCE50527D27FBF003E49A1 /* ComponentView.swift in Sources */,
 				0FCCE54927D298EE003E49A1 /* SelectPreferencesPresenter.swift in Sources */,
 				0FCCE50027D27FBF003E49A1 /* CommonAnimation.swift in Sources */,
+				0FCCE57727D2A479003E49A1 /* HomeViewController+Delegates.swift in Sources */,
 				0FCCE54A27D298EE003E49A1 /* SelectPreferencesInteractor.swift in Sources */,
 				0FCCE4FD27D27FBF003E49A1 /* SelectionList.swift in Sources */,
 				0FCCE50A27D27FBF003E49A1 /* CountryPickerWithSectionViewController.swift in Sources */,
 				0F1089B527D237470064133B /* AppDelegate.swift in Sources */,
 				0FCCE4DE27D27D7A003E49A1 /* UITableView+RegisterCell.swift in Sources */,
 				0F1089B727D237470064133B /* SceneDelegate.swift in Sources */,
+				0FCCE57A27D2A479003E49A1 /* HomeViewController.swift in Sources */,
 				0FCCE4E327D27E20003E49A1 /* String+Localizable.swift in Sources */,
 				0FCCE4FF27D27FBF003E49A1 /* CircleLotateLayer.swift in Sources */,
 				0FCCE50227D27FBF003E49A1 /* CircleLayer.swift in Sources */,
