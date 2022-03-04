@@ -19,5 +19,11 @@
 			</array>
 		</dict>
 	</dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>GE_SS_Two_Light.otf</string>
+		<string>GE_SS_TWO_MEDIUM.otf</string>
+		<string>GE_SS_Two_Bold.otf</string>
+	</array>
 </dict>
 </plist>

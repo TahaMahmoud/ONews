@@ -35,7 +35,8 @@ class AppCoordinator: Coordinator {
         // Handle First Open
 
         if SettingsHandler.isLanguageSet() == false {
-
+            let selectLanguageRouter = SelectLanguageRouter(navigationController: navigationController)
+            coordinate(to: selectLanguageRouter)
         } else if SettingsHandler.isCountrySet() == false {
 
         } else if SettingsHandler.isPreferencesSet() == false {
