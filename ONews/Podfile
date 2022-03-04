@@ -1,0 +1,27 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'ONews' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for ONews
+  pod 'Alamofire'
+  pod 'IQKeyboardManager'
+  pod 'Kingfisher'
+  pod 'CRNotifications'
+  pod 'MOLH'
+  pod 'RealmSwift'
+  pod 'JJFloatingActionButton'
+  pod 'MOLH'
+
+  target 'ONewsTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'ONewsUITests' do
+    # Pods for testing
+  end
+
+end
