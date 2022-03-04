@@ -18,7 +18,9 @@ struct SettingsHandler {
     }
 
     static func isPreferencesSet() -> Bool? {
-        return false
+        let preferences: [CategoryModel] = RealmManager.sharedInstance.retrieveAllDataForObject(CategoryModel.self).map{ $0 as! CategoryModel }
+                
+        return preferences.count != 0
     }
     
 }

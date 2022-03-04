@@ -57,6 +57,14 @@
 		0FCCE53327D29654003E49A1 /* GE_SS_Two_Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0FCCE52A27D28F12003E49A1 /* GE_SS_Two_Bold.otf */; };
 		0FCCE53427D29658003E49A1 /* GE_SS_Two_Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0FCCE52B27D28F12003E49A1 /* GE_SS_Two_Light.otf */; };
 		0FCCE53527D2965B003E49A1 /* GE_SS_TWO_MEDIUM.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0FCCE52C27D28F12003E49A1 /* GE_SS_TWO_MEDIUM.otf */; };
+		0FCCE54827D298EE003E49A1 /* SelectPreferencesProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCCE54327D298EE003E49A1 /* SelectPreferencesProtocols.swift */; };
+		0FCCE54927D298EE003E49A1 /* SelectPreferencesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCCE54427D298EE003E49A1 /* SelectPreferencesPresenter.swift */; };
+		0FCCE54A27D298EE003E49A1 /* SelectPreferencesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCCE54527D298EE003E49A1 /* SelectPreferencesInteractor.swift */; };
+		0FCCE54B27D298EE003E49A1 /* SelectPreferencesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCCE54627D298EE003E49A1 /* SelectPreferencesRouter.swift */; };
+		0FCCE54C27D298EE003E49A1 /* SelectPreferencesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCCE54727D298EE003E49A1 /* SelectPreferencesModel.swift */; };
+		0FCCE54F27D29918003E49A1 /* SelectPreferencesViewController+Delegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCCE54E27D29918003E49A1 /* SelectPreferencesViewController+Delegates.swift */; };
+		0FCCE55227D2992D003E49A1 /* SelectPreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCCE55027D2992D003E49A1 /* SelectPreferencesViewController.swift */; };
+		0FCCE55327D2992D003E49A1 /* SelectPreferencesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FCCE55127D2992D003E49A1 /* SelectPreferencesViewController.xib */; };
 		D72E6CA53CB217F1D4A55F7F /* Pods_ONews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2DF7987B5224FB492788F73 /* Pods_ONews.framework */; };
 		E89A1A76BDDB06B19076D023 /* Pods_ONews_ONewsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBF65E8C97435725BB302EDB /* Pods_ONews_ONewsUITests.framework */; };
 /* End PBXBuildFile section */
@@ -132,6 +140,14 @@
 		0FCCE52D27D28F67003E49A1 /* SelectLanguageViewController+Delegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SelectLanguageViewController+Delegates.swift"; sourceTree = "<group>"; };
 		0FCCE52F27D28F85003E49A1 /* SelectLanguageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectLanguageViewController.swift; sourceTree = "<group>"; };
 		0FCCE53027D28F85003E49A1 /* SelectLanguageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectLanguageViewController.xib; sourceTree = "<group>"; };
+		0FCCE54327D298EE003E49A1 /* SelectPreferencesProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectPreferencesProtocols.swift; sourceTree = "<group>"; };
+		0FCCE54427D298EE003E49A1 /* SelectPreferencesPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectPreferencesPresenter.swift; sourceTree = "<group>"; };
+		0FCCE54527D298EE003E49A1 /* SelectPreferencesInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectPreferencesInteractor.swift; sourceTree = "<group>"; };
+		0FCCE54627D298EE003E49A1 /* SelectPreferencesRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectPreferencesRouter.swift; sourceTree = "<group>"; };
+		0FCCE54727D298EE003E49A1 /* SelectPreferencesModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectPreferencesModel.swift; sourceTree = "<group>"; };
+		0FCCE54E27D29918003E49A1 /* SelectPreferencesViewController+Delegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SelectPreferencesViewController+Delegates.swift"; sourceTree = "<group>"; };
+		0FCCE55027D2992D003E49A1 /* SelectPreferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPreferencesViewController.swift; sourceTree = "<group>"; };
+		0FCCE55127D2992D003E49A1 /* SelectPreferencesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectPreferencesViewController.xib; sourceTree = "<group>"; };
 		1297AF3D42E03339D0F06956 /* Pods-ONews-ONewsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ONews-ONewsUITests.debug.xcconfig"; path = "Target Support Files/Pods-ONews-ONewsUITests/Pods-ONews-ONewsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		15D92501291C71C0D269AB1B /* Pods-ONewsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ONewsTests.debug.xcconfig"; path = "Target Support Files/Pods-ONewsTests/Pods-ONewsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2047C29FDF398CEDAA4681D6 /* Pods-ONews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ONews.debug.xcconfig"; path = "Target Support Files/Pods-ONews/Pods-ONews.debug.xcconfig"; sourceTree = "<group>"; };
@@ -375,6 +391,7 @@
 		0F1089F527D239A80064133B /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				0FCCE54227D298EE003E49A1 /* SelectPreferences */,
 				0FCCE52027D286E5003E49A1 /* SelectLanguage */,
 			);
 			path = Modules;
@@ -452,6 +469,29 @@
 				0FCCE52D27D28F67003E49A1 /* SelectLanguageViewController+Delegates.swift */,
 				0FCCE52F27D28F85003E49A1 /* SelectLanguageViewController.swift */,
 				0FCCE53027D28F85003E49A1 /* SelectLanguageViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0FCCE54227D298EE003E49A1 /* SelectPreferences */ = {
+			isa = PBXGroup;
+			children = (
+				0FCCE54D27D298F4003E49A1 /* View */,
+				0FCCE54327D298EE003E49A1 /* SelectPreferencesProtocols.swift */,
+				0FCCE54427D298EE003E49A1 /* SelectPreferencesPresenter.swift */,
+				0FCCE54527D298EE003E49A1 /* SelectPreferencesInteractor.swift */,
+				0FCCE54627D298EE003E49A1 /* SelectPreferencesRouter.swift */,
+				0FCCE54727D298EE003E49A1 /* SelectPreferencesModel.swift */,
+			);
+			path = SelectPreferences;
+			sourceTree = "<group>";
+		};
+		0FCCE54D27D298F4003E49A1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0FCCE54E27D29918003E49A1 /* SelectPreferencesViewController+Delegates.swift */,
+				0FCCE55027D2992D003E49A1 /* SelectPreferencesViewController.swift */,
+				0FCCE55127D2992D003E49A1 /* SelectPreferencesViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -588,6 +628,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FCCE55327D2992D003E49A1 /* SelectPreferencesViewController.xib in Resources */,
 				0FCCE53227D28F85003E49A1 /* SelectLanguageViewController.xib in Resources */,
 				0F1089C127D237490064133B /* LaunchScreen.storyboard in Resources */,
 				0FCCE50B27D27FBF003E49A1 /* tickMark.png in Resources */,
@@ -723,6 +764,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FCCE54C27D298EE003E49A1 /* SelectPreferencesModel.swift in Sources */,
 				0FCCE50427D27FBF003E49A1 /* CountryPickerView.swift in Sources */,
 				0FCCE50127D27FBF003E49A1 /* BPCircleActivityIndicator.swift in Sources */,
 				0FCCE51327D28253003E49A1 /* UserDetaultsManager.swift in Sources */,
@@ -730,11 +772,14 @@
 				0FCCE4E727D27F0D003E49A1 /* SettingsHandler.swift in Sources */,
 				0FCCE51D27D2834E003E49A1 /* NetworkError.swift in Sources */,
 				0FCCE51927D282C6003E49A1 /* Constants.swift in Sources */,
+				0FCCE54F27D29918003E49A1 /* SelectPreferencesViewController+Delegates.swift in Sources */,
 				0FCCE51727D2829C003E49A1 /* RealmManager.swift in Sources */,
 				0FCCE53127D28F85003E49A1 /* SelectLanguageViewController.swift in Sources */,
+				0FCCE54827D298EE003E49A1 /* SelectPreferencesProtocols.swift in Sources */,
 				0FCCE52727D28720003E49A1 /* SelectLanguageProtocols.swift in Sources */,
 				0FCCE50327D27FBF003E49A1 /* Constant.swift in Sources */,
 				0FCCE50C27D27FBF003E49A1 /* CountryCell.swift in Sources */,
+				0FCCE54B27D298EE003E49A1 /* SelectPreferencesRouter.swift in Sources */,
 				0FCCE51F27D2837E003E49A1 /* Endpoint.swift in Sources */,
 				0FCCE52E27D28F67003E49A1 /* SelectLanguageViewController+Delegates.swift in Sources */,
 				0FCCE4FE27D27FBF003E49A1 /* CircleLotationSet.swift in Sources */,
@@ -748,7 +793,9 @@
 				0FCCE51127D2822D003E49A1 /* UserDefaultsKeys.swift in Sources */,
 				0FCCE52527D28711003E49A1 /* SelectLanguageRouter.swift in Sources */,
 				0FCCE50527D27FBF003E49A1 /* ComponentView.swift in Sources */,
+				0FCCE54927D298EE003E49A1 /* SelectPreferencesPresenter.swift in Sources */,
 				0FCCE50027D27FBF003E49A1 /* CommonAnimation.swift in Sources */,
+				0FCCE54A27D298EE003E49A1 /* SelectPreferencesInteractor.swift in Sources */,
 				0FCCE4FD27D27FBF003E49A1 /* SelectionList.swift in Sources */,
 				0FCCE50A27D27FBF003E49A1 /* CountryPickerWithSectionViewController.swift in Sources */,
 				0F1089B527D237470064133B /* AppDelegate.swift in Sources */,
@@ -757,6 +804,7 @@
 				0FCCE4E327D27E20003E49A1 /* String+Localizable.swift in Sources */,
 				0FCCE4FF27D27FBF003E49A1 /* CircleLotateLayer.swift in Sources */,
 				0FCCE50227D27FBF003E49A1 /* CircleLayer.swift in Sources */,
+				0FCCE55227D2992D003E49A1 /* SelectPreferencesViewController.swift in Sources */,
 				0FCCE52927D28730003E49A1 /* SelectLanguageInteractor.swift in Sources */,
 				0FCCE4E527D27EDB003E49A1 /* Helper.swift in Sources */,
 				0FCCE50927D27FBF003E49A1 /* CountryManager.swift in Sources */,

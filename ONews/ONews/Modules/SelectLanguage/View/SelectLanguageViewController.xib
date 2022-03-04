@@ -64,7 +64,7 @@ view the news in</string>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="hv9-zE-ScI">
                     <rect key="frame" x="62.5" y="273" width="250" height="175"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PDN-W9-nq9" customClass="CustomButton" customModule="ITWorxNews" customModuleProvider="target">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PDN-W9-nq9" customClass="CustomButton" customModule="ONews" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="0.0" width="250" height="80"/>
                             <color key="backgroundColor" name="SecondaryColor"/>
                             <constraints>
@@ -88,7 +88,7 @@ view the news in</string>
                                 <action selector="arabicSelected:" destination="-1" eventType="touchUpInside" id="sJ3-aM-Yeo"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9K8-qZ-L7U" customClass="CustomButton" customModule="ITWorxNews" customModuleProvider="target">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9K8-qZ-L7U" customClass="CustomButton" customModule="ONews" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="95" width="250" height="80"/>
                             <color key="backgroundColor" name="SecondaryColor"/>
                             <fontDescription key="fontDescription" name="GESSTwoMedium-Medium" family="GE SS Two" pointSize="30"/>
@@ -114,7 +114,7 @@ view the news in</string>
                         <constraint firstItem="9K8-qZ-L7U" firstAttribute="width" secondItem="PDN-W9-nq9" secondAttribute="width" id="dde-NI-OGr"/>
                     </constraints>
                 </stackView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YdT-LL-b0B" customClass="CustomButton" customModule="ITWorxNews" customModuleProvider="target">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YdT-LL-b0B" customClass="CustomButton" customModule="ONews" customModuleProvider="target">
                     <rect key="frame" x="83.5" y="586" width="208" height="37"/>
                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>

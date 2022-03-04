@@ -38,12 +38,16 @@ class AppCoordinator: Coordinator {
             let selectLanguageRouter = SelectLanguageRouter(navigationController: navigationController)
             coordinate(to: selectLanguageRouter)
         } else if SettingsHandler.isCountrySet() == false {
-
+            let selectLanguageRouter = SelectLanguageRouter(navigationController: navigationController)
+            coordinate(to: selectLanguageRouter)
         } else if SettingsHandler.isPreferencesSet() == false {
-
+            let selectPreferencesRouter = SelectPreferencesRouter(navigationController: navigationController)
+            coordinate(to: selectPreferencesRouter)
         } else {
-            
+            // let homeRouter = HomeRouter(navigationController: navigationController)
+            // coordinate(to: homeRouter)
         }
+        
     }
     
 }

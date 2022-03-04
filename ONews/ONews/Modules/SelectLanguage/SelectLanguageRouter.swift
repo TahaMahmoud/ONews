@@ -43,7 +43,8 @@ extension SelectLanguageRouter: SelectLanguageRouterProtocol {
     }
     
     func navigateToSelectPreferences() {
-
+        let selectPreferencesRouter = SelectPreferencesRouter(navigationController: navigationController)
+        selectPreferencesRouter.start()
     }
-    
+
 }
