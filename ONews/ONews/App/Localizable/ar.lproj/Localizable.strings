@@ -1,0 +1,43 @@
+/* 
+  Localizable.strings
+  ONews
+
+  Created by Taha on 05/03/2022.
+  
+*/
+
+// Genereal
+"Success" = "تم بنجاح";
+"Error" = "حدث خطأ";
+
+
+// Select Language
+"Select Langauge and Country" = "قم بإختيار اللغة والدولة" ;
+
+
+// Select Preferences
+"Failed To Save Preferences" = "فشل حفظ التفضيلات" ;
+"Select At Least one Category" = "يجب اختيار تصنيف واحد على الاقل";
+"business" = "الاعمال" ;
+"entertainment" = "الترفيه" ;
+"general" = "عام" ;
+"health" = "الصحة" ;
+"science" = "العلوم" ;
+"sports" = "الرياضة" ;
+"technology" = "التكنولوجيا" ;
+
+
+// Home
+"Please check your internet connection" = "تأكد من إتصال الانترنت لديك" ;
+"Error while fetching News" = "حدث خطأ أثناء تحميل الاخبار" ;
+"Saved" = "الاخبار المحفوظة" ;
+"Settings" = "الإعدادات" ;
+"Home" = "الرئيسية" ;
+
+
+// Article Details
+"Article saved for later" = "تم حفظ الخبر لقراءته لاحقا" ;
+"Article removed from saved" = "تم حذف الخبر من المحفوظات" ;
+
+
+// Saved

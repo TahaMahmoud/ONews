@@ -1,0 +1,46 @@
+PODS:
+  - Alamofire (5.5.0)
+  - CRNotifications (1.2.1)
+  - IQKeyboardManager (6.5.9)
+  - JJFloatingActionButton (2.5.0)
+  - Kingfisher (7.1.2)
+  - MOLH (1.4.3)
+  - Realm (10.22.0):
+    - Realm/Headers (= 10.22.0)
+  - Realm/Headers (10.22.0)
+  - RealmSwift (10.22.0):
+    - Realm (= 10.22.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - CRNotifications
+  - IQKeyboardManager
+  - JJFloatingActionButton
+  - Kingfisher
+  - MOLH
+  - RealmSwift
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - CRNotifications
+    - IQKeyboardManager
+    - JJFloatingActionButton
+    - Kingfisher
+    - MOLH
+    - Realm
+    - RealmSwift
+
+SPEC CHECKSUMS:
+  Alamofire: 1c4fb5369c3fe93d2857c780d8bbe09f06f97e7c
+  CRNotifications: 2799786cb63e104c75699843d8928afd680182f3
+  IQKeyboardManager: 241cc94ccabc9deb8f8bd7d12f00d73288d13ecc
+  JJFloatingActionButton: fdc3aefb0f28f04d0f988fa25d5fac97028a9ea7
+  Kingfisher: 44ed6a8504763f27bab46163adfac83f5deb240c
+  MOLH: e45827d200aeb1310641090fd8cd03ad2b42ae72
+  Realm: d9e4e5877095a6722145811f56fe89a531c9659d
+  RealmSwift: e4191b4b957fcfcbed23751ec65eec98f8173ab5
+
+PODFILE CHECKSUM: a8a805582533af62b1dbee55fd79ed49038f6eea
+
+COCOAPODS: 1.11.2

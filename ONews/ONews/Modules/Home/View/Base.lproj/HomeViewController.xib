@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="GE_SS_TWO_MEDIUM.otf">
+            <string>GESSTwoMedium-Medium</string>
+        </array>
+        <array key="GE_SS_Two_Bold.otf">
+            <string>GESSTwoBold-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="ONews" customModuleProvider="target">
+            <connections>
+                <outlet property="articlesTableView" destination="OJU-mH-DEb" id="Zro-nT-phW"/>
+                <outlet property="categoriesList" destination="26J-8c-DSC" id="FV7-sC-zrW"/>
+                <outlet property="filterView" destination="hKa-PA-5GB" id="agT-JK-TIf"/>
+                <outlet property="indicator" destination="XFi-9E-opn" id="Vu2-4T-fDd"/>
+                <outlet property="menuButton" destination="KV5-Il-oRC" id="612-Uf-4tw"/>
+                <outlet property="searchText" destination="4MN-VH-ti0" id="h5p-CL-E2c"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" tag="-1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Latest News" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TDi-pu-u1A">
+                    <rect key="frame" x="16" y="79" width="343" height="42"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="42" id="eba-NP-wzb"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="GESSTwoBold-Bold" family="GE SS Two" pointSize="23"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="220" estimatedRowHeight="220" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="OJU-mH-DEb">
+                    <rect key="frame" x="16" y="129" width="343" height="538"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XFi-9E-opn" customClass="BPCircleActivityIndicator" customModule="ONews" customModuleProvider="target">
+                    <rect key="frame" x="172.5" y="318.5" width="30" height="30"/>
+                    <viewLayoutGuide key="safeArea" id="OSf-Lc-Erz"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="Ecp-08-pIr"/>
+                        <constraint firstAttribute="height" constant="30" id="mak-NE-X2U"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KV5-Il-oRC" customClass="JJFloatingActionButton" customModule="JJFloatingActionButton">
+                    <rect key="frame" x="292" y="564" width="63" height="63"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="63" id="7hk-PK-Ece"/>
+                        <constraint firstAttribute="height" constant="63" id="J3L-m0-WQO"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="buttonColor">
+                            <color key="value" red="0.93326598409999995" green="0.53044271470000004" blue="0.25939747689999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="highlightedButtonColor">
+                            <color key="value" red="0.94419175389999999" green="0.72535479069999997" blue="0.55944561960000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="image" keyPath="buttonImage" value="icon_menu"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gzh-gi-qWr" customClass="CustomView" customModule="ONews" customModuleProvider="target">
+                    <rect key="frame" x="16" y="20" width="343" height="45"/>
+                    <subviews>
+                        <textField opaque="NO" tag="-1" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" placeholder="Search" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4MN-VH-ti0">
+                            <rect key="frame" x="10" y="7.5" width="293" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="6ic-ak-23S"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="GESSTwoMedium-Medium" family="GE SS Two" pointSize="18"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <action selector="searchEditEnd:" destination="-1" eventType="editingDidEnd" id="QgZ-dv-QA4"/>
+                            </connections>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tu8-4y-Avi">
+                            <rect key="frame" x="313" y="12.5" width="20" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="20" id="5Ca-0U-gZ6"/>
+                                <constraint firstAttribute="height" constant="20" id="bWo-Yi-m5M"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="ic_filter"/>
+                            <connections>
+                                <action selector="filterPressed:" destination="-1" eventType="touchUpInside" id="oQi-Zv-dmA"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.94901973009999996" green="0.94901961089999998" blue="0.94901961089999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="Tu8-4y-Avi" firstAttribute="centerY" secondItem="gzh-gi-qWr" secondAttribute="centerY" id="7gy-I5-zR1"/>
+                        <constraint firstAttribute="height" constant="45" id="7qT-MU-35w"/>
+                        <constraint firstItem="4MN-VH-ti0" firstAttribute="leading" secondItem="gzh-gi-qWr" secondAttribute="leading" constant="10" id="QIT-EV-reI"/>
+                        <constraint firstItem="4MN-VH-ti0" firstAttribute="centerY" secondItem="gzh-gi-qWr" secondAttribute="centerY" id="WyF-3a-xik"/>
+                        <constraint firstItem="Tu8-4y-Avi" firstAttribute="leading" secondItem="4MN-VH-ti0" secondAttribute="trailing" constant="10" id="hz7-ph-maf"/>
+                        <constraint firstAttribute="trailing" secondItem="Tu8-4y-Avi" secondAttribute="trailing" constant="10" id="paY-dY-3H4"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusValue">
+                            <real key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hKa-PA-5GB" customClass="CustomView" customModule="ONews" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="73" width="375" height="594"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="26J-8c-DSC" customClass="SelectionList" customModule="ONews" customModuleProvider="target">
+                            <rect key="frame" x="25" y="20" width="325" height="477"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JUM-Ea-Mg9" customClass="CustomButton" customModule="ONews" customModuleProvider="target">
+                            <rect key="frame" x="83.5" y="537" width="208" height="37"/>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="208" id="Qia-q8-sUV"/>
+                                <constraint firstAttribute="height" constant="37" id="g7A-Kd-kk0"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="GESSTwoMedium-Medium" family="GE SS Two" pointSize="16"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Filter">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusValue">
+                                    <real key="value" value="12"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="0.0"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="saveFilter:" destination="-1" eventType="touchUpInside" id="TDB-MS-s52"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="26J-8c-DSC" firstAttribute="leading" secondItem="hKa-PA-5GB" secondAttribute="leading" constant="25" id="24l-f3-Axy"/>
+                        <constraint firstItem="JUM-Ea-Mg9" firstAttribute="top" secondItem="26J-8c-DSC" secondAttribute="bottom" constant="40" id="W5T-FJ-Wjr"/>
+                        <constraint firstAttribute="bottom" secondItem="JUM-Ea-Mg9" secondAttribute="bottom" constant="20" id="ahl-CH-7be"/>
+                        <constraint firstAttribute="trailing" secondItem="26J-8c-DSC" secondAttribute="trailing" constant="25" id="cAy-9M-Afz"/>
+                        <constraint firstItem="26J-8c-DSC" firstAttribute="top" secondItem="hKa-PA-5GB" secondAttribute="top" constant="20" id="iBr-Lj-jSc"/>
+                        <constraint firstItem="JUM-Ea-Mg9" firstAttribute="centerX" secondItem="hKa-PA-5GB" secondAttribute="centerX" id="lI4-ja-TNv"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusValue">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="hKa-PA-5GB" firstAttribute="top" secondItem="gzh-gi-qWr" secondAttribute="bottom" constant="8" id="0Ao-uK-89Z"/>
+                <constraint firstItem="hKa-PA-5GB" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="2B7-Tt-MxP"/>
+                <constraint firstItem="hKa-PA-5GB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="3TO-Qs-yEv"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="gzh-gi-qWr" secondAttribute="trailing" constant="16" id="9AS-Am-xzB"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="KV5-Il-oRC" secondAttribute="trailing" constant="20" id="ELl-LI-r3T"/>
+                <constraint firstItem="hKa-PA-5GB" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Gwt-O3-Wv5"/>
+                <constraint firstItem="XFi-9E-opn" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="RPX-Iq-jWM"/>
+                <constraint firstItem="OJU-mH-DEb" firstAttribute="leading" secondItem="gzh-gi-qWr" secondAttribute="leading" id="SJk-wa-TtM"/>
+                <constraint firstItem="TDi-pu-u1A" firstAttribute="trailing" secondItem="gzh-gi-qWr" secondAttribute="trailing" id="VO0-5R-o6U"/>
+                <constraint firstItem="OJU-mH-DEb" firstAttribute="top" secondItem="TDi-pu-u1A" secondAttribute="bottom" constant="8" id="Vtv-TT-Mja"/>
+                <constraint firstItem="TDi-pu-u1A" firstAttribute="leading" secondItem="gzh-gi-qWr" secondAttribute="leading" id="Ys2-P8-Ham"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="KV5-Il-oRC" secondAttribute="bottom" constant="40" id="agL-99-xhW"/>
+                <constraint firstItem="XFi-9E-opn" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="ett-3J-Tal"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="OJU-mH-DEb" secondAttribute="bottom" id="j25-jS-TWL"/>
+                <constraint firstItem="gzh-gi-qWr" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="jue-xF-u1W"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="hKa-PA-5GB" secondAttribute="bottom" id="pkj-sA-qwm"/>
+                <constraint firstItem="gzh-gi-qWr" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="rLA-9s-6ED"/>
+                <constraint firstItem="OJU-mH-DEb" firstAttribute="trailing" secondItem="gzh-gi-qWr" secondAttribute="trailing" id="sqJ-Uf-g3d"/>
+                <constraint firstItem="TDi-pu-u1A" firstAttribute="top" secondItem="gzh-gi-qWr" secondAttribute="bottom" constant="14" id="vfg-Ip-5Vz"/>
+            </constraints>
+            <point key="canvasLocation" x="138.40000000000001" y="49.925037481259373"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="26J-8c-DSC">
+            <size key="intrinsicContentSize" width="-1" height="132"/>
+        </designable>
+        <designable name="JUM-Ea-Mg9">
+            <size key="intrinsicContentSize" width="36" height="30"/>
+        </designable>
+        <designable name="KV5-Il-oRC">
+            <size key="intrinsicContentSize" width="56" height="56"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="ic_filter" width="100" height="100"/>
+        <image name="icon_menu" width="120" height="120"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

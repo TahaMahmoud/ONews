@@ -1,0 +1,9 @@
+
+/* Class = "UITextField"; placeholder = "Search"; ObjectID = "4MN-VH-ti0"; */
+"4MN-VH-ti0.placeholder" = "بحث";
+
+/* Class = "UIButton"; normalTitle = "Filter"; ObjectID = "JUM-Ea-Mg9"; */
+"JUM-Ea-Mg9.normalTitle" = "تحديد التفضيلات";
+
+/* Class = "UILabel"; text = "Latest News"; ObjectID = "TDi-pu-u1A"; */
+"TDi-pu-u1A.text" = "احدث الأخبار";
