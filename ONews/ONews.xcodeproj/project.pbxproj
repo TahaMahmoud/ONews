@@ -16,6 +16,13 @@
 		0F1089CC27D237490064133B /* ONewsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1089CB27D237490064133B /* ONewsTests.swift */; };
 		0F1089D627D237490064133B /* ONewsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1089D527D237490064133B /* ONewsUITests.swift */; };
 		0F1089D827D237490064133B /* ONewsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1089D727D237490064133B /* ONewsUITestsLaunchTests.swift */; };
+		0F7E1C7A27D35085001480AD /* SavedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7E1C7827D35085001480AD /* SavedViewController.swift */; };
+		0F7E1C7B27D35085001480AD /* SavedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F7E1C7927D35085001480AD /* SavedViewController.xib */; };
+		0F7E1C7D27D35094001480AD /* SavedViewController+Delegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7E1C7C27D35094001480AD /* SavedViewController+Delegates.swift */; };
+		0F7E1C8027D350A8001480AD /* SavedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7E1C7F27D350A8001480AD /* SavedPresenter.swift */; };
+		0F7E1C8227D350B5001480AD /* SavedRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7E1C8127D350B5001480AD /* SavedRouter.swift */; };
+		0F7E1C8427D350C2001480AD /* SavedInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7E1C8327D350C2001480AD /* SavedInteractor.swift */; };
+		0F7E1C8627D350CF001480AD /* SavedProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7E1C8527D350CF001480AD /* SavedProtocols.swift */; };
 		0FCCE4DA27D27D2A003E49A1 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCCE4D927D27D2A003E49A1 /* CustomView.swift */; };
 		0FCCE4DC27D27D4C003E49A1 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCCE4DB27D27D4C003E49A1 /* CustomButton.swift */; };
 		0FCCE4DE27D27D7A003E49A1 /* UITableView+RegisterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCCE4DD27D27D7A003E49A1 /* UITableView+RegisterCell.swift */; };
@@ -118,6 +125,13 @@
 		0F1089D127D237490064133B /* ONewsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ONewsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F1089D527D237490064133B /* ONewsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ONewsUITests.swift; sourceTree = "<group>"; };
 		0F1089D727D237490064133B /* ONewsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ONewsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0F7E1C7827D35085001480AD /* SavedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedViewController.swift; sourceTree = "<group>"; };
+		0F7E1C7927D35085001480AD /* SavedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SavedViewController.xib; sourceTree = "<group>"; };
+		0F7E1C7C27D35094001480AD /* SavedViewController+Delegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SavedViewController+Delegates.swift"; sourceTree = "<group>"; };
+		0F7E1C7F27D350A8001480AD /* SavedPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedPresenter.swift; sourceTree = "<group>"; };
+		0F7E1C8127D350B5001480AD /* SavedRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedRouter.swift; sourceTree = "<group>"; };
+		0F7E1C8327D350C2001480AD /* SavedInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedInteractor.swift; sourceTree = "<group>"; };
+		0F7E1C8527D350CF001480AD /* SavedProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedProtocols.swift; sourceTree = "<group>"; };
 		0FCCE4D927D27D2A003E49A1 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		0FCCE4DB27D27D4C003E49A1 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		0FCCE4DD27D27D7A003E49A1 /* UITableView+RegisterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+RegisterCell.swift"; sourceTree = "<group>"; };
@@ -429,11 +443,34 @@
 		0F1089F527D239A80064133B /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				0F7E1C7727D35058001480AD /* Saved */,
 				0FCE704627D2BE20004B027D /* ArticleDetails */,
 				0FCCE56A27D2A479003E49A1 /* Home */,
 				0FCE704727D2BE27004B027D /* OnBoarding */,
 			);
 			path = Modules;
+			sourceTree = "<group>";
+		};
+		0F7E1C7727D35058001480AD /* Saved */ = {
+			isa = PBXGroup;
+			children = (
+				0F7E1C7E27D3509A001480AD /* View */,
+				0F7E1C7F27D350A8001480AD /* SavedPresenter.swift */,
+				0F7E1C8127D350B5001480AD /* SavedRouter.swift */,
+				0F7E1C8327D350C2001480AD /* SavedInteractor.swift */,
+				0F7E1C8527D350CF001480AD /* SavedProtocols.swift */,
+			);
+			path = Saved;
+			sourceTree = "<group>";
+		};
+		0F7E1C7E27D3509A001480AD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0F7E1C7827D35085001480AD /* SavedViewController.swift */,
+				0F7E1C7927D35085001480AD /* SavedViewController.xib */,
+				0F7E1C7C27D35094001480AD /* SavedViewController+Delegates.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		0FCCE4EA27D27FBD003E49A1 /* BPCircleActivityIndicator */ = {
@@ -740,6 +777,7 @@
 				0FCE705E27D2BF8E004B027D /* ArticleDetailsViewController.xib in Resources */,
 				0F03545827D2BCE300C670AD /* NewsCell.xib in Resources */,
 				0F1089BE27D237490064133B /* Assets.xcassets in Resources */,
+				0F7E1C7B27D35085001480AD /* SavedViewController.xib in Resources */,
 				0FCCE50827D27FBF003E49A1 /* CountryPickerController.bundle in Resources */,
 				0FCCE53527D2965B003E49A1 /* GE_SS_TWO_MEDIUM.otf in Resources */,
 				0FCCE57927D2A479003E49A1 /* HomeViewController.xib in Resources */,
@@ -898,14 +936,18 @@
 				0FCE704C27D2BE93004B027D /* ArticleDetailsInteractor.swift in Sources */,
 				0FCCE50727D27FBF003E49A1 /* CountryPickerController.swift in Sources */,
 				0FCCE52327D286FF003E49A1 /* SelectLanguagePresenter.swift in Sources */,
+				0F7E1C8027D350A8001480AD /* SavedPresenter.swift in Sources */,
 				0FCCE57827D2A479003E49A1 /* NewsCell.swift in Sources */,
 				0FCE705227D2BEC6004B027D /* ArticleDetailsModel.swift in Sources */,
 				0FCCE50F27D28203003E49A1 /* AppCoordinator.swift in Sources */,
 				0FCCE51B27D28321003E49A1 /* NetworkManager.swift in Sources */,
+				0F7E1C8627D350CF001480AD /* SavedProtocols.swift in Sources */,
+				0F7E1C8227D350B5001480AD /* SavedRouter.swift in Sources */,
 				0FCCE57D27D2A479003E49A1 /* HomeModel.swift in Sources */,
 				0FCCE4E127D27DA1003E49A1 /* Colors.swift in Sources */,
 				0FCE704927D2BE7C004B027D /* ArticleDetailsProtocols.swift in Sources */,
 				0FCCE50627D27FBF003E49A1 /* Country.swift in Sources */,
+				0F7E1C7A27D35085001480AD /* SavedViewController.swift in Sources */,
 				0FCCE4DA27D27D2A003E49A1 /* CustomView.swift in Sources */,
 				0FCCE51127D2822D003E49A1 /* UserDefaultsKeys.swift in Sources */,
 				0FCCE52527D28711003E49A1 /* SelectLanguageRouter.swift in Sources */,
@@ -915,9 +957,11 @@
 				0FCCE54927D298EE003E49A1 /* SelectPreferencesPresenter.swift in Sources */,
 				0FCCE50027D27FBF003E49A1 /* CommonAnimation.swift in Sources */,
 				0FCCE57727D2A479003E49A1 /* HomeViewController+Delegates.swift in Sources */,
+				0F7E1C8427D350C2001480AD /* SavedInteractor.swift in Sources */,
 				0FCCE54A27D298EE003E49A1 /* SelectPreferencesInteractor.swift in Sources */,
 				0FCCE4FD27D27FBF003E49A1 /* SelectionList.swift in Sources */,
 				0FCCE50A27D27FBF003E49A1 /* CountryPickerWithSectionViewController.swift in Sources */,
+				0F7E1C7D27D35094001480AD /* SavedViewController+Delegates.swift in Sources */,
 				0F1089B527D237470064133B /* AppDelegate.swift in Sources */,
 				0FCCE4DE27D27D7A003E49A1 /* UITableView+RegisterCell.swift in Sources */,
 				0F1089B727D237470064133B /* SceneDelegate.swift in Sources */,

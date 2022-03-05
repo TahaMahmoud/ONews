@@ -1,15 +1,15 @@
 //
-//  HomeRouter.swift
+//  SavedRouter.swift
 //  ONews
 //
-//  Created by Taha on 04/03/2022.
+//  Created by Taha on 05/03/2022.
 //
 
 import UIKit
 
-// MARK: Home Router -
+// MARK: Saved Router -
 
-class HomeRouter: Coordinator {
+class SavedRouter: Coordinator {
     
     unowned let navigationController: UINavigationController
     
@@ -18,39 +18,41 @@ class HomeRouter: Coordinator {
     }
 
     func start() {
-        let view =  HomeViewController()
-        let interactor = HomeInteractor(networkManager: AlamofireManager())
-        let router = HomeRouter(navigationController: navigationController)
+        let view =  SavedViewController()
+        let interactor = SavedInteractor(networkManager: AlamofireManager())
+        let router = SavedRouter(navigationController: navigationController)
         
-        let presenter = HomePresenter(view: view, interactor: interactor, router: router)
+        let presenter = SavedPresenter(view: view, interactor: interactor, router: router)
 
         view.presenter = presenter
         interactor.presenter = presenter
 
         navigationController.navigationBar.isHidden = true
         navigationController.setViewControllers([view], animated: true)
-        
+
         // navigationController.pushViewController(view, animated: true)
     }
 
 }
 
 
-extension HomeRouter: HomeRouterProtocol {
+extension SavedRouter: SavedRouterProtocol {
     
-    func navigateToSavedArticles() {
-        let savedRouter = SavedRouter(navigationController: navigationController)
-        savedRouter.start()
+    func navigateToHome() {
+        let homeRouter = HomeRouter(navigationController: navigationController)
+        homeRouter.start()
     }
     
     func navigateToSettings() {
-        // let selectLanguageRouter = SelectLanguageRouter(navigationController: navigationController)
-        // selectLanguageRouter.start()
+        // let settingsRouter = SettingsRouter(navigationController: navigationController)
+        // settingsRouter.start()
     }
     
     func navigateToArticleDetails(article: Article) {
         let articleDetailsRouter = ArticleDetailsRouter(navigationController: navigationController, article: article)
         articleDetailsRouter.start()
+
     }
+    
     
 }

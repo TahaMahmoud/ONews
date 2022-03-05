@@ -44,6 +44,12 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DKs-76-oUd" customClass="CustomView" customModule="ONews" customModuleProvider="target">
                     <rect key="frame" x="16" y="321" width="343" height="346"/>
                     <subviews>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="A0R-4S-vyY">
+                            <rect key="frame" x="20" y="9" width="303" height="317"/>
+                            <color key="textColor" systemColor="labelColor"/>
+                            <fontDescription key="fontDescription" name="GESSTwoLight-Light" family="GE SS Two" pointSize="17"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eoy-1y-ky4">
                             <rect key="frame" x="277" y="256" width="56" height="56"/>
                             <constraints>
@@ -56,12 +62,6 @@
                                 <action selector="saveArticlePressed:" destination="-1" eventType="touchUpInside" id="XeZ-Fj-GG5"/>
                             </connections>
                         </button>
-                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="A0R-4S-vyY">
-                            <rect key="frame" x="20" y="9" width="303" height="317"/>
-                            <color key="textColor" systemColor="labelColor"/>
-                            <fontDescription key="fontDescription" name="GESSTwoLight-Light" family="GE SS Two" pointSize="17"/>
-                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                        </textView>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
