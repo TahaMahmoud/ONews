@@ -58,11 +58,11 @@ news to recommend things you’ll like.</string>
                         <constraint firstAttribute="height" constant="80" id="pC8-nm-sfW"/>
                     </constraints>
                 </imageView>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2R8-ss-LK6" customClass="SelectionList" customModule="ITWorxNews" customModuleProvider="target">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2R8-ss-LK6" customClass="SelectionList" customModule="ONews" customModuleProvider="target">
                     <rect key="frame" x="28" y="257" width="319" height="296"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </view>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dSD-rh-Zdl" customClass="CustomButton" customModule="ITWorxNews" customModuleProvider="target">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dSD-rh-Zdl" customClass="CustomButton" customModule="ONews" customModuleProvider="target">
                     <rect key="frame" x="83.5" y="593" width="208" height="37"/>
                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
@@ -109,6 +109,9 @@ news to recommend things you’ll like.</string>
         </view>
     </objects>
     <designables>
+        <designable name="2R8-ss-LK6">
+            <size key="intrinsicContentSize" width="-1" height="132"/>
+        </designable>
         <designable name="dSD-rh-Zdl">
             <size key="intrinsicContentSize" width="37" height="30"/>
         </designable>

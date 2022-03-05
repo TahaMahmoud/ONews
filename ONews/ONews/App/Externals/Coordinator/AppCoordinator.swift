@@ -31,9 +31,9 @@ class AppCoordinator: Coordinator {
 
         window.rootViewController = navigationController
         window.makeKeyAndVisible()
-
+        
         // Handle First Open
-
+        
         if SettingsHandler.isLanguageSet() == false {
             let selectLanguageRouter = SelectLanguageRouter(navigationController: navigationController)
             coordinate(to: selectLanguageRouter)

@@ -39,7 +39,7 @@ class SelectLanguageRouter: Coordinator {
 extension SelectLanguageRouter: SelectLanguageRouterProtocol {
     
     func restartApp() {
-        // to handle change language in the select language screen
+        
     }
     
     func navigateToSelectPreferences() {

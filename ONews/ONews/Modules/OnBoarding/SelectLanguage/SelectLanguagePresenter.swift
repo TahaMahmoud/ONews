@@ -21,8 +21,8 @@ class SelectLanguagePresenter: SelectLanguagePresenterProtocol, SelectLanguageIn
     private let interactor: SelectLanguageInteractorInputProtocol
     private let router: SelectLanguageRouterProtocol
     
+    var selectedLanguage: String = ""
     var selectedCountryCode: String = ""
-    var selectedLanguage: Language?
     
     init(view: SelectLanguageViewProtocol, interactor: SelectLanguageInteractorInputProtocol, router: SelectLanguageRouterProtocol) {
         self.view = view
@@ -31,23 +31,33 @@ class SelectLanguagePresenter: SelectLanguagePresenterProtocol, SelectLanguageIn
     }
 
     func viewDidLoad() {
-        
+        selectedLanguage = getCurrentLanguage()
+                
+        if selectedLanguage == "ar" {
+            view?.renderArLanguage()
+        } else {
+            view?.renderEnLanguage()
+        }
+    }
+    
+    func getCurrentLanguage() -> String {
+        return MOLHLanguage.currentAppleLanguage()
     }
     
     func arabicSelected() {
-        selectedLanguage = .arabic
-        setDefault()
+        setDefault(language: .arabic)
     }
     
     func englishSelected() {
-        selectedLanguage = .english
-        setDefault()
+        setDefault(language: .english)
     }
     
-    func setDefault() {
-        MOLH.setLanguageTo(selectedLanguage?.rawValue ?? "ar")
+    func setDefault(language: Language) {
+        interactor.setLanguage(language: language)
+
+        MOLH.setLanguageTo(language.rawValue)
+        
         MOLH.reset()
-        router.restartApp()
     }
     
     func savedSuccess() {
@@ -56,8 +66,7 @@ class SelectLanguagePresenter: SelectLanguagePresenterProtocol, SelectLanguageIn
     
     func save(countryCode: String) {
         
-        if selectedLanguage != .none && countryCode != "" {
-            interactor.setLanguage(language: selectedLanguage ?? .english)
+        if selectedLanguage != "" && countryCode != "" {
             interactor.setCountry(countryCode: countryCode)
         }
         else {

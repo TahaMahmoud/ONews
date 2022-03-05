@@ -1,0 +1,18 @@
+
+/* Class = "UIButton"; normalTitle = "English"; ObjectID = "9K8-qZ-L7U"; */
+"9K8-qZ-L7U.normalTitle" = "English";
+
+/* Class = "UIButton"; normalTitle = "Select Country"; ObjectID = "H3o-dU-NDB"; */
+"H3o-dU-NDB.normalTitle" = "اختيار الدولة";
+
+/* Class = "UIButton"; normalTitle = "اللغة العربية"; ObjectID = "PDN-W9-nq9"; */
+"PDN-W9-nq9.normalTitle" = "اللغة العربية";
+
+/* Class = "UILabel"; text = "Select your language"; ObjectID = "TSw-rS-XlK"; */
+"TSw-rS-XlK.text" = "اختر لغتك المفضلة";
+
+/* Class = "UIButton"; normalTitle = "Save"; ObjectID = "YdT-LL-b0B"; */
+"YdT-LL-b0B.normalTitle" = "حفظ";
+
+/* Class = "UILabel"; text = "Select the preferred language to\nview the news in"; ObjectID = "li9-OC-Aji"; */
+"li9-OC-Aji.text" = "اختر لغتك المفضلة لإستخدامها في عرض اخر الاخبار";

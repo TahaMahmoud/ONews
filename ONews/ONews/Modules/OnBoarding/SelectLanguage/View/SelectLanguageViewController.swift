@@ -23,22 +23,10 @@ class SelectLanguageViewController: UIViewController {
     }
 
     @IBAction func arabicSelected(_ sender: Any) {
-        arButton.backgroundColor = Colors.mainColor
-        arButton.setTitleColor(.white, for: .normal)
-        
-        enButton.backgroundColor = Colors.secondaryColor
-        enButton.setTitleColor(.black, for: .normal)
-        
         presenter.arabicSelected()
     }
     
     @IBAction func englishSelected(_ sender: Any) {
-        enButton.backgroundColor = Colors.mainColor
-        enButton.setTitleColor(.white, for: .normal)
-
-        arButton.backgroundColor = Colors.secondaryColor
-        arButton.setTitleColor(.black, for: .normal)
-
         presenter.englishSelected()
     }
         

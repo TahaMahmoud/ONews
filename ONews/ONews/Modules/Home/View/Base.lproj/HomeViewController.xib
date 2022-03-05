@@ -33,7 +33,7 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Latest News" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TDi-pu-u1A">
+                <label opaque="NO" userInteractionEnabled="NO" tag="-1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Latest News" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TDi-pu-u1A">
                     <rect key="frame" x="16" y="79" width="343" height="42"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="42" id="eba-NP-wzb"/>
@@ -43,7 +43,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="220" estimatedRowHeight="220" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="OJU-mH-DEb">
-                    <rect key="frame" x="16" y="129" width="343" height="498"/>
+                    <rect key="frame" x="16" y="129" width="343" height="538"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
                 <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XFi-9E-opn" customClass="BPCircleActivityIndicator" customModule="ONews" customModuleProvider="target">
@@ -75,7 +75,7 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gzh-gi-qWr" customClass="CustomView" customModule="ONews" customModuleProvider="target">
                     <rect key="frame" x="16" y="20" width="343" height="45"/>
                     <subviews>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4MN-VH-ti0">
+                        <textField opaque="NO" tag="-1" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" placeholder="Search" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4MN-VH-ti0">
                             <rect key="frame" x="10" y="7.5" width="293" height="30"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="30" id="6ic-ak-23S"/>
@@ -184,7 +184,7 @@
                 <constraint firstItem="TDi-pu-u1A" firstAttribute="leading" secondItem="gzh-gi-qWr" secondAttribute="leading" id="Ys2-P8-Ham"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="KV5-Il-oRC" secondAttribute="bottom" constant="40" id="agL-99-xhW"/>
                 <constraint firstItem="XFi-9E-opn" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="ett-3J-Tal"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="OJU-mH-DEb" secondAttribute="bottom" constant="40" id="j25-jS-TWL"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="OJU-mH-DEb" secondAttribute="bottom" id="j25-jS-TWL"/>
                 <constraint firstItem="gzh-gi-qWr" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="jue-xF-u1W"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="hKa-PA-5GB" secondAttribute="bottom" id="pkj-sA-qwm"/>
                 <constraint firstItem="gzh-gi-qWr" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="rLA-9s-6ED"/>

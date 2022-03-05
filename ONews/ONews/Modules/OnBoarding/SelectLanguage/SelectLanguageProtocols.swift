@@ -13,6 +13,9 @@ protocol SelectLanguageViewProtocol: AnyObject {
     var presenter: SelectLanguagePresenterProtocol! { get set }
     
     func showError(error: String)
+    
+    func renderArLanguage()
+    func renderEnLanguage()
 }
 
 protocol SelectLanguagePresenterProtocol: AnyObject {

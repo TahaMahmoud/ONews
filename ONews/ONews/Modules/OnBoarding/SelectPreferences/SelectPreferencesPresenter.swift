@@ -53,6 +53,7 @@ class SelectPreferencesPresenter: SelectPreferencesPresenterProtocol, SelectPref
         if selectedIndices.count > maximumSelection {
             let indexPath = IndexPath(row: lastIndex, section: 0)
             view?.deselectLastSelection(indexPath: indexPath)
+            return
         }
         self.selectedIndices = selectedIndices
     }

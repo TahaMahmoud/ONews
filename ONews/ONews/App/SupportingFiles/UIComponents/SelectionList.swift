@@ -165,7 +165,9 @@ extension SelectionList: UITableViewDataSource, UITableViewDelegate {
             cell.deselectionImage = deselectionImage
             cell.isSelectionMarkTrailing = isSelectionMarkTrailing
         }
+        cell.contentView.tag = -1
         cell.textLabel?.text = items[indexPath.row]
+        cell.textLabel?.tag = -1
         setupCell?(cell, indexPath.row)
         return cell
     }

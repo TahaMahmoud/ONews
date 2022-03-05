@@ -1,0 +1,9 @@
+
+/* Class = "UILabel"; text = "We’ll use this info to personalize your\nnews to recommend things you’ll like."; ObjectID = "C2y-Ye-Rw6"; */
+"C2y-Ye-Rw6.text" = "سنقوم بإسخدام هذه المعلومات لتحديد تفضيلاتك وعرض الاخبار المهتم بها";
+
+/* Class = "UILabel"; text = "Select your Preferences"; ObjectID = "Oa7-DV-Srs"; */
+"Oa7-DV-Srs.text" = "اختر تفضيلاتك";
+
+/* Class = "UIButton"; normalTitle = "Save"; ObjectID = "dSD-rh-Zdl"; */
+"dSD-rh-Zdl.normalTitle" = "حفظ";
