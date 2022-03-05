@@ -50,7 +50,6 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         if indexPath.row == presenter.noOfArticles - 3 && presenter.noOfArticles != 3 {
-            print(indexPath.row)
             presenter.fetchArticles()
             return
         }

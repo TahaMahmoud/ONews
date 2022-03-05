@@ -19,10 +19,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="ONews" customModuleProvider="target">
             <connections>
-                <outlet property="articlesTableView" destination="OJU-mH-DEb" id="SEr-04-skE"/>
+                <outlet property="articlesTableView" destination="OJU-mH-DEb" id="Zro-nT-phW"/>
                 <outlet property="categoriesList" destination="26J-8c-DSC" id="FV7-sC-zrW"/>
                 <outlet property="filterView" destination="hKa-PA-5GB" id="agT-JK-TIf"/>
-                <outlet property="indicator" destination="XFi-9E-opn" id="vQe-Vl-wrU"/>
+                <outlet property="indicator" destination="XFi-9E-opn" id="Vu2-4T-fDd"/>
                 <outlet property="menuButton" destination="KV5-Il-oRC" id="612-Uf-4tw"/>
                 <outlet property="searchText" destination="4MN-VH-ti0" id="h5p-CL-E2c"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -46,7 +46,7 @@
                     <rect key="frame" x="16" y="129" width="343" height="498"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
-                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XFi-9E-opn" customClass="BPCircleActivityIndicator" customModule="ITWorxNews" customModuleProvider="target">
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XFi-9E-opn" customClass="BPCircleActivityIndicator" customModule="ONews" customModuleProvider="target">
                     <rect key="frame" x="172.5" y="318.5" width="30" height="30"/>
                     <viewLayoutGuide key="safeArea" id="OSf-Lc-Erz"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -72,7 +72,7 @@
                         <userDefinedRuntimeAttribute type="image" keyPath="buttonImage" value="icon_menu"/>
                     </userDefinedRuntimeAttributes>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gzh-gi-qWr" customClass="CustomView" customModule="ITWorxNews" customModuleProvider="target">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gzh-gi-qWr" customClass="CustomView" customModule="ONews" customModuleProvider="target">
                     <rect key="frame" x="16" y="20" width="343" height="45"/>
                     <subviews>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4MN-VH-ti0">
@@ -82,6 +82,9 @@
                             </constraints>
                             <fontDescription key="fontDescription" name="GESSTwoMedium-Medium" family="GE SS Two" pointSize="18"/>
                             <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <action selector="searchEditEnd:" destination="-1" eventType="editingDidEnd" id="QgZ-dv-QA4"/>
+                            </connections>
                         </textField>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tu8-4y-Avi">
                             <rect key="frame" x="313" y="12.5" width="20" height="20"/>
@@ -91,6 +94,9 @@
                             </constraints>
                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                             <state key="normal" image="ic_filter"/>
+                            <connections>
+                                <action selector="filterPressed:" destination="-1" eventType="touchUpInside" id="oQi-Zv-dmA"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" red="0.94901973009999996" green="0.94901961089999998" blue="0.94901961089999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -111,14 +117,14 @@
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                 </view>
-                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hKa-PA-5GB" customClass="CustomView" customModule="ITWorxNews" customModuleProvider="target">
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hKa-PA-5GB" customClass="CustomView" customModule="ONews" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="73" width="375" height="594"/>
                     <subviews>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="26J-8c-DSC" customClass="SelectionList" customModule="ITWorxNews" customModuleProvider="target">
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="26J-8c-DSC" customClass="SelectionList" customModule="ONews" customModuleProvider="target">
                             <rect key="frame" x="25" y="20" width="325" height="477"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </view>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JUM-Ea-Mg9" customClass="CustomButton" customModule="ITWorxNews" customModuleProvider="target">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JUM-Ea-Mg9" customClass="CustomButton" customModule="ONews" customModuleProvider="target">
                             <rect key="frame" x="83.5" y="537" width="208" height="37"/>
                             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
@@ -138,6 +144,9 @@
                                     <real key="value" value="0.0"/>
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="saveFilter:" destination="-1" eventType="touchUpInside" id="TDB-MS-s52"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -182,10 +191,13 @@
                 <constraint firstItem="OJU-mH-DEb" firstAttribute="trailing" secondItem="gzh-gi-qWr" secondAttribute="trailing" id="sqJ-Uf-g3d"/>
                 <constraint firstItem="TDi-pu-u1A" firstAttribute="top" secondItem="gzh-gi-qWr" secondAttribute="bottom" constant="14" id="vfg-Ip-5Vz"/>
             </constraints>
-            <point key="canvasLocation" x="139" y="50"/>
+            <point key="canvasLocation" x="138.40000000000001" y="49.925037481259373"/>
         </view>
     </objects>
     <designables>
+        <designable name="26J-8c-DSC">
+            <size key="intrinsicContentSize" width="-1" height="132"/>
+        </designable>
         <designable name="JUM-Ea-Mg9">
             <size key="intrinsicContentSize" width="36" height="30"/>
         </designable>

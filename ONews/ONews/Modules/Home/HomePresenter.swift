@@ -86,18 +86,15 @@ class HomePresenter: HomePresenterProtocol, HomeInteractorOutputProtocol {
             view?.showIndicator()
         
             let cats = filteredCategories.count > 0 ? filterCategories : categories
-            
-            DispatchQueue.global().async {
-                
-                self.page = self.page + 1
                             
-                if cats.count > 0 {
-                    for cat in self.categories {
-                        self.interactor.fetchArticles(search: self.searchValue, country: self.country, language: self.language, pageSize: self.pageSize, page: self.page, category: cat)
-                    }
-                } else {
-                    self.interactor.fetchArticles(search: "", country: self.country, language: self.language, pageSize: self.pageSize, page: self.page, category: "")
+            self.page = self.page + 1
+                            
+            if cats.count > 0 {
+                for cat in categories {
+                    interactor.fetchArticles(search: searchValue, country: country, language: language, pageSize: pageSize, page: page, category: cat)
                 }
+            } else {
+                interactor.fetchArticles(search: "", country: country, language: language, pageSize: self.pageSize, page: page, category: "")
             }
         } else {
             view?.showError(error: "Please check your internet connection".localized)
@@ -114,6 +111,7 @@ class HomePresenter: HomePresenterProtocol, HomeInteractorOutputProtocol {
     }
     
     func configureCell(cell: NewsCell, indexPath: IndexPath) {
+                
         let articleImageURL = articles[indexPath.row].urlToImage ?? ""
         
         let title = articles[indexPath.row].title ?? ""
@@ -146,18 +144,14 @@ class HomePresenter: HomePresenterProtocol, HomeInteractorOutputProtocol {
     }
     
     func articlesFetched(model: ArticlesResponse) {
-        DispatchQueue.main.async {
-            self.view?.hideIndicator()
-            self.articles.append(contentsOf: model.articles ?? [])
-            self.view?.reloadData()
-        }
+        view?.hideIndicator()
+        articles.append(contentsOf: model.articles ?? [])
+        view?.reloadData()
     }
     
     func failedWith(error: String) {
-        DispatchQueue.main.async {
-            self.view?.hideIndicator()
-            self.view?.showError(error: "Error while fetching News".localized)
-        }
+        view?.hideIndicator()
+        view?.showError(error: "Error while fetching News".localized)
     }
 
     func didSelect(at indexPath: IndexPath) {

@@ -16,9 +16,7 @@ class AlamofireManager: NetworkProtocol {
     func callRequest<T>(_ object: T.Type, endpoint: Endpoint, onComplete: @escaping ((Result<T, Error>) -> Void)) where T : Decodable, T : Encodable {
         AF.request(endpoint).responseJSON { (response) in
             do {
-                
-                print(response.value)
-                
+                                
                 guard let statusCode = response.response?.statusCode else {return}
                 switch statusCode {
                 case 200:
